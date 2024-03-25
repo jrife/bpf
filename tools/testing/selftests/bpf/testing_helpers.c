@@ -255,7 +255,7 @@ int extra_prog_load_log_flags = 0;
 int testing_prog_flags(void)
 {
 	static int cached_flags = -1;
-	static int prog_flags[] = { BPF_F_TEST_RND_HI32, BPF_F_TEST_REG_INVARIANTS };
+	static int prog_flags[] = { BPF_F_TEST_REG_INVARIANTS };
 	static struct bpf_insn insns[] = {
 		BPF_MOV64_IMM(BPF_REG_0, 0),
 		BPF_EXIT_INSN(),
